@@ -10,7 +10,7 @@ def home_page():
 
 
 @app.route("/login", methods=["GET", "POST"])
-def login():
+def receive_data():
     if request.method == 'POST':
         login_username = request.form['username']
         login_password = request.form['password']
